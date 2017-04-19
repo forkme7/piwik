@@ -8,6 +8,8 @@
 	<totalDownloads>0</totalDownloads>
 	<totalSearches>0</totalSearches>
 	<totalPageViews>1</totalPageViews>
+	<totalUniquePageViews>1</totalUniquePageViews>
+	<totalRevisitedPages>0</totalRevisitedPages>
 	<totalPageViewsWithTiming>0</totalPageViewsWithTiming>
 	<totalGoalConversions>1</totalGoalConversions>
 	<totalConversionsByGoal>
@@ -62,6 +64,7 @@
 					<url>http://test.com</url>
 					<pageTitle />
 					<pageIdAction>6</pageIdAction>
+					
 					
 					<pageId>5</pageId>
 					<interactionPosition />
@@ -194,6 +197,7 @@
 					<pageTitle>Homepage</pageTitle>
 					<pageIdAction>2</pageIdAction>
 					
+					
 					<pageId>4</pageId>
 					<interactionPosition>1</interactionPosition>
 					<icon />
@@ -303,6 +307,18 @@
 			</pluginsIcons>
 		</row>
 	</lastVisits>
+	<devices>
+		<Desktop>
+			<count>2</count>
+			<icon>plugins/Morpheus/icons/dist/devices/desktop.png</icon>
+			<devices>
+				<Unknown>2</Unknown>
+			</devices>
+		</Desktop>
+	</devices>
+	<visitedPages>
+		<row key="http://example.org/homepage">1</row>
+	</visitedPages>
 	<userId>0</userId>
 	
 	
