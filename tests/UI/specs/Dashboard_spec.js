@@ -134,6 +134,7 @@ describe("Dashboard", function () {
 
     it("should open row evolution", function (done) {
         expect.screenshot("rowevolution").to.be.capture(function (page) {
+            page.load(url, 5000);
             page.click('#widgetActionsgetPageUrls table.dataTable tbody tr:first-child a.actionRowEvolution', 2000);
         }, done);
     });
