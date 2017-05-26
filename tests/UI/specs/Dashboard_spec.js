@@ -124,18 +124,18 @@ describe("Dashboard", function () {
             page.mouseMove('.widgetpreview-categorylist>li:contains(Live!)'); // have to mouse move twice... otherwise Live! will just be highlighted
             page.click('.widgetpreview-categorylist>li:contains(Live!)');
 
-            page.mouseMove('.widgetpreview-categorylist>li:contains(Actions):first');
-            page.click('.widgetpreview-categorylist>li:contains(Actions):first');
+            page.mouseMove('.widgetpreview-categorylist>li:contains(Referrers):first');
+            page.click('.widgetpreview-categorylist>li:contains(Referrers):first');
 
-            page.mouseMove('.widgetpreview-widgetlist>li:contains(Pages):first');
-            page.click('.widgetpreview-widgetlist>li:contains(Pages):first');
+            page.mouseMove('.widgetpreview-widgetlist>li:contains(Referrer Types):first');
+            page.click('.widgetpreview-widgetlist>li:contains(Referrer Types):first');
         }, done);
     });
 
     it("should open row evolution", function (done) {
         expect.screenshot("rowevolution").to.be.capture(function (page) {
             page.load(url, 5000);
-            page.click('#widgetActionsgetPageUrls table.dataTable tbody tr:first-child a.actionRowEvolution', 2000);
+            page.click('#widgetReferrersgetReferrerType table.dataTable tbody tr:first-child a.actionRowEvolution', 2000);
         }, done);
     });
 
@@ -143,7 +143,7 @@ describe("Dashboard", function () {
         expect.screenshot("widget_move_removed").to.be.capture(function (page) {
             page.click('.ui-dialog-titlebar-close:visible'); // close row evolution
 
-            var widget = '[id="widgetActionsgetPageUrls"]';
+            var widget = '[id="widgetReferrersgetReferrerType"]';
 
             page.mouseMove(widget + ' .widgetTop');
             page.click(widget + ' .button#close');
